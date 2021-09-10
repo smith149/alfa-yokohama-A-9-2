@@ -66,7 +66,7 @@ Youtube貼り付けここまで -->
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
               v-on:answer-input="answerInput($event, 'stage1', 1)" は送信ボタンをクリックした時の動作を決める関数です。
               2番目、3番目の1引数 'stage1', 1 はstage1の1問目ということになります。
-              1番麺の引数 $event は正解、不正解の判定を受け取る変数です。
+              1番目の引数 $event は正解、不正解の判定を受け取る変数です。
               []、()の間違い、''の抜けがあると動きません。
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
